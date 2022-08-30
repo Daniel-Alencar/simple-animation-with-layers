@@ -3,13 +3,13 @@ let vx = 5, vy = 5;
 let layer;
 
 function setup() {
-  createCanvas(document.body.offsetWidth, document.body.offsetHeight);
+  createCanvas(document.body.offsetWidth - 100, document.body.offsetHeight - 100);
 
   // Define a cor padrão dos objetos que aparecerão no 'canvas'
   fill('#00ff00');
 
   // Cria um "outro canvas" abstrato (não como uma nova tag HTML)
-  // As variáveis widht e height se referem as dimensões do 'canvas' original que foi criado
+  // As variáveis width e height se referem as dimensões do 'canvas' original que foi criado
   layer = createGraphics(width, height);
 }
 
